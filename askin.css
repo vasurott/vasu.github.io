@@ -1,0 +1,128 @@
+    .askin{
+        margin-bottom: 200px;
+        overflow: hidden;
+    }
+    .askin .container{
+        width: 100%;
+        transform: scale(1.2);
+        opacity: 0;
+        transition: opacity 2.5s ease, transform 2.5s ease;
+    }
+    .askin .container.active{
+        width: 100%;
+        transform: scale(1);
+        opacity: 1;
+    }
+    .a-content{
+        width: 95%;
+        margin: auto;
+        padding: 20px 0;
+        border-radius: 20px;
+        background: transparent;
+        backdrop-filter: grayscale(20%);
+        transition: 2s ease;
+    }
+
+    .a-flex{
+        display: flex;
+        width: 70%;
+        margin: auto;
+    }
+
+    .a-name1{
+        writing-mode: sideways-rl;
+    }
+    .a-name1 h1{
+        font-size: 3.4rem;
+    }
+
+    .a-image1{
+        width: 100%;
+    }
+    .a-image1 img{
+        width: 100%;
+        aspect-ratio: 2/.4;
+        object-fit: cover;
+    }
+    .a-text{
+        font-size: 1.7rem;
+        text-align: center;
+    }
+
+    .a-flex2{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .a-image2{
+        width: 80%;
+    }
+    .a-image2 img{
+        width: 100%;
+        aspect-ratio: 2/1;
+        object-fit: cover;
+    }
+
+    .a-music{
+        width: 30%;
+        text-align: center;
+    }
+    .a-music h3{
+        font-size: 1.7rem;
+    }
+    .a-music img{
+        width: 50px;
+        cursor: pointer;
+    }
+
+    .a-name2{
+        writing-mode: sideways-lr;
+    }
+    .a-name2 h1{
+        font-size: 5rem;
+        letter-spacing: 3px;
+    }
+
+    @media (max-width: 1000px){
+        .a-name1 h1{
+            font-size: 3rem;
+        }
+        .a-name2 h1{
+            font-size: 4rem;
+            letter-spacing: 3px;
+        }
+    }
+    @media (max-width: 768px){
+        .a-name1 h1{
+            font-size: 2.8rem;
+        }
+        .a-name2 h1{
+            font-size: 3.7rem;
+            letter-spacing: 1px;
+        }
+    }
+    @media (max-width: 600px){
+        .a-flex{
+            width: 100%;
+        }
+    }
+    @media (max-width: 480px){
+        .a-name1 h1{
+            font-size: 2.5rem;
+        }
+        .a-name2 h1{
+            font-size: 3.5rem;
+            letter-spacing: 0px;
+        }
+        .a-text{
+            font-size: 1.5rem;
+        }
+        .a-music h3{
+            font-size: 1.4rem;
+        }
+        .a-music img{
+            width: 45px;
+        }
+    }
