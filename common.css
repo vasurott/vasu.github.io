@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --light: #d4d4d4;
+}
+html{
+    font-size: 62.5%;
+}
+.eng{
+    font-family: Libre Caslon Display;
+}
+.B{
+    font-family: Instrument Serif;
+}
+.jp{
+    font-family: Zen Old Mincho;
+}
+
+/* header */
+.header .container{
+    width: 100%;
+    min-height: 8vh;
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: 30% 1fr 10%;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+}
+
+.menu{
+    background-image: url(../img/menu-regular-108.png);
+    background-size: cover;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    grid-column: 3/4;
+    cursor: pointer;
+    position: inherit;
+    z-index: 1;
+    transition: .5s;
+}
+.menu.active{
+    background-image: url(../img/bx-x.svg);
+    background-size: cover;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    grid-column: 3/4;
+    cursor: pointer;
+    position: inherit;
+    z-index: 1;
+}
+
+
+/* menu bar */
+.menu-bar{
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%) translateX(230px);
+    right: 10px;
+    width: 200px;
+    background-color: #111;
+    z-index: 100;
+    border-radius: 20px;
+    transition: .5s ease;
+}
+.menu-bar.active{
+    transform: translateX(0px) translateY(-50%);
+}
+.menu-bar h3{
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fff;
+    padding: 30px 0;
+}
+.menu-bar a{
+    text-decoration: none;
+}
+
+@media (max-width: 768px){
+    .menu{
+        width: 40px;
+        height: 40px;
+    }
+    .menu.active{
+        width: 40px;
+        height: 40px;
+    }
+    .menu-bar{
+        right: 10px;
+        width: 180px;
+    }
+    .menu-bar h3{
+        font-size: 1.4rem;
+    }
+}
+@media (max-width: 480px){
+    .menu{
+        width: 35px;
+        height: 35px;
+    }
+    .menu.active{
+        width: 35px;
+        height: 35px;
+    }
+    .menu-bar{
+        right: 10px;
+        width: 160px;
+    }
+    .menu-bar h3{
+        font-size: 1.3rem;
+    }
+}
