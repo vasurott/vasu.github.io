@@ -1,0 +1,164 @@
+.kyoraku{
+    padding-bottom: 200px;
+    overflow: hidden;
+}
+.kyoraku .container{
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    transform: scale(1.2);
+    opacity: 0;
+    transition: opacity 2.5s ease, transform 2.5s ease;
+}
+.kyoraku .container.active{
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    transform: scale(1);
+    opacity: 1;
+}
+.k-content{
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px 0;
+    border-radius: 20px;
+    background: transparent;
+    backdrop-filter: grayscale(20%);
+    transition: 2s ease;
+}
+.k-name{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+.k-name h1{
+    font-size: 5rem;
+    letter-spacing: 5px;
+    line-height: 55px;
+}
+.k-name h3{
+    font-size: 1.5rem;
+}
+.k-image{
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.k-image .k-left{
+    width: 30%;
+}
+.k-image .k-mid{
+    width: 30%;
+}
+.k-image .k-right{
+    width: 30%;
+}
+.k-image img{
+    width: 100%;
+    aspect-ratio: 1/1.3;
+    object-fit: cover;
+}
+.below-flex{
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 20px;
+    align-items: center;
+}
+.k-text-flex{
+    display: flex;
+    width: 70%;
+}
+.k-big-text{
+    font-size: 2rem;
+    writing-mode: vertical-lr;
+}
+.k-text{
+    font-size: 1.7rem;
+}
+.k-text p{
+    margin-bottom: 10px;
+}
+.k-music{
+    width: 30%;
+    text-align: center;
+}
+.k-music h3{
+    font-size: 1.7rem;
+}
+.k-music img{
+    width: 50px;
+    cursor: pointer;
+}
+
+@media (max-width: 1000px){
+    .k-text p{
+        margin-bottom: 5px;
+    }
+    .k-name h1{
+        font-size: 4.5rem;
+        letter-spacing: 3px;
+        line-height: 54px;
+    }
+    .k-name h3{
+        font-size: 1.3rem;
+    }
+}
+@media (max-width: 768px){
+    .k-text{
+        font-size: 1.6rem;
+    }
+    .k-text p{
+        margin-bottom: 0px;
+    }
+    .k-name h1{
+        font-size: 4.5rem;
+        letter-spacing: 1px;
+        line-height: 53px;
+    }
+    .k-name h3{
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 600px){
+    .k-name{
+        width: 100%;
+    }
+    .k-image{
+        width: 100%;
+    }
+    .below-flex{
+        width: 100%;
+    }
+    .k-text-flex{
+        width: 100%;
+    }
+    .k-name h1{
+        font-size: 4rem;
+        letter-spacing: 0px;
+        line-height: 45px;
+    }
+    .k-text p{
+        margin-bottom: 3px;
+    }
+    .k-music h3{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 480px){
+    .k-name h1{
+        font-size: 3.7rem;
+        line-height: 43px;
+    }
+    .k-text p{
+        margin-bottom: 0px;
+    }
+    .k-music h3{
+        font-size: 1.4rem;
+    }
+    .k-music img{
+        width: 45px;
+    }
+}
